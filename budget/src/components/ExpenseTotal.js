@@ -4,7 +4,7 @@ import { AppContext } from '../context/AppContext';
 const ExpenseTotal = () => {
     const { expenses } = useContext(AppContext);
 
-    // Calculate total expenses
+
     const totalExpenses = expenses.reduce((total, item) => {
         return total + item.cost;
     }, 0);
